@@ -1,0 +1,42 @@
+<%= form_with model: @user do |form| %>
+  <div>
+  <%# aqui na primeira linha cria o titulo de acordo com o que esta no banco de dados
+  e na segunda linha cria um campo para digitacao,sendo ele definido quando criamos o modelo (banco de dados)
+   o mesmo e feito para todos os outros campos%>
+    <%= form.label :name %><br> 
+    <%= form.text_field :name %>
+    <%# criacao de uma funcao onde exibe os erros de validacao %>
+       <% @user.errors.full_messages_for(:name).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :email %><br>
+    <%= form.text_area :email %>
+       <% @user.errors.full_messages_for(:email).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+   <div>
+    <%= form.label :password %><br>
+    <%= form.text_area :password %>
+       <% @user.errors.full_messages_for(:password).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+   <div>
+    <%= form.label :password_confirmation%><br>
+    <%= form.text_area :password_confirmation %>
+       <% @user.errors.full_messages_for(:password_confirmation).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+  <%# criamos tambem um botao para enviar esses dados para o banco de dados %>
+    <%= form.submit "cadastrar" %>
+  </div>
+<% end %>
