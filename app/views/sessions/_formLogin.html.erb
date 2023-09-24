@@ -1,3 +1,5 @@
+<div class="container">
+<h1>Welcome to Meu Diário Online!</h1><br/>
 <%= form_for :session, url: sign_in_path do |f| %>
   <div class="field">
     <%= f.label :email %><br />
@@ -7,10 +9,14 @@
   <div class="field">
     <%= f.label :password %><br />
     <%= f.password_field :password, autocomplete: "off" %>
+   
     
   </div>
-  <div class="actions">
-    <%= f.submit "Log in" %>
+    <div class="button">
+  <%# criamos tambem um botao para enviar esses dados para o banco de dados %>
+    <%= f.submit "Entrar" %>
+    <p>New user? <%= link_to "Sign up now!", new_user_path %></p>
   </div>
-<p>New user? <%= link_to "Sign up now!", new_user_path %></p>
+
 <% end %>
+</div>

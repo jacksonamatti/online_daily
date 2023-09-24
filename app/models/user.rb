@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  # assicioacao entre os modelos
+  has_many :posts
   # criando o campo senha emcriptado
   has_secure_password
   # validacoes de email e senha
