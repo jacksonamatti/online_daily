@@ -18,6 +18,6 @@ Este é um projeto de diário online desenvolvido em Ruby on Rails que permite a
 
 Antes de começar, certifique-se de que você tenha os seguintes pré-requisitos instalados:
 
-- Ruby (versão X.X.X)
-- Ruby on Rails (versão X.X.X)
-- Banco de Dados (por exemplo, PostgreSQL, MySQL)
+- Ruby
+- Ruby on Rails
+- Banco de Dados SQLITE3
