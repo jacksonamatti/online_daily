@@ -1,5 +1,7 @@
+<div class="container">
+<h1>Criar login</h1>
 <%= form_with model: @user do |form| %>
-  <div>
+  <div class="field">
   <%# aqui na primeira linha cria o titulo de acordo com o que esta no banco de dados
   e na segunda linha cria um campo para digitacao,sendo ele definido quando criamos o modelo (banco de dados)
    o mesmo e feito para todos os outros campos%>
@@ -11,7 +13,7 @@
     <% end %>
   </div>
 
-  <div>
+  <div class="field">
     <%= form.label :email %><br>
     <%= form.text_field :email %>
        <% @user.errors.full_messages_for(:email).each do |message| %>
@@ -19,7 +21,7 @@
     <% end %>
   </div>
 
-   <div>
+   <div class="field">
     <%= form.label :password %><br>
     <%= form.password_field :password %>
        <% @user.errors.full_messages_for(:password).each do |message| %>
@@ -27,7 +29,7 @@
     <% end %>
   </div>
 
-   <div>
+   <div class="field">
     <%= form.label :password_confirmation%><br>
     <%= form.password_field :password_confirmation %>
        <% @user.errors.full_messages_for(:password_confirmation).each do |message| %>
@@ -35,8 +37,11 @@
     <% end %>
   </div>
 
-  <div>
+  <div class="button">
   <%# criamos tambem um botao para enviar esses dados para o banco de dados %>
     <%= form.submit "cadastrar" %>
+    <p>Já possui login ? <%= link_to "Log in", root_path %></p>
   </div>
 <% end %>
+
+</div>
