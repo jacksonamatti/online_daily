@@ -1,24 +1,23 @@
-# README
+# Diário Online em Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este é um projeto de diário online desenvolvido em Ruby on Rails que permite aos usuários criar contas, fazer login e registrar suas anotações e resumos pessoais. É uma ferramenta simples para registrar pensamentos e lembranças que podem ser acessados e revisados a qualquer momento.
 
-Things you may want to cover:
+## Funcionalidades
 
-* Ruby version
+- **Cadastro de Usuários**: Os usuários podem criar contas com segurança.
 
-* System dependencies
+- **Login e Logout**: Os usuários registrados podem fazer login e fazer logout de suas contas.
 
-* Configuration
+- **Adicionar Entradas**: Os usuários podem adicionar novas entradas de diário contendo notas, resumos ou pensamentos.
 
-* Database creation
+- **Listagem de Entradas**: Todas as entradas do diário são listadas para revisão.
 
-* Database initialization
+- **Edição e Exclusão**: Os usuários podem editar ou excluir entradas existentes.
 
-* How to run the test suite
+## Pré-requisitos
 
-* Services (job queues, cache servers, search engines, etc.)
+Antes de começar, certifique-se de que você tenha os seguintes pré-requisitos instalados:
 
-* Deployment instructions
-
-* ...
+- Ruby (versão X.X.X)
+- Ruby on Rails (versão X.X.X)
+- Banco de Dados (por exemplo, PostgreSQL, MySQL)
