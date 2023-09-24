@@ -13,7 +13,7 @@
 
   <div>
     <%= form.label :email %><br>
-    <%= form.text_area :email %>
+    <%= form.text_field :email %>
        <% @user.errors.full_messages_for(:email).each do |message| %>
       <div><%= message %></div>
     <% end %>
@@ -21,7 +21,7 @@
 
    <div>
     <%= form.label :password %><br>
-    <%= form.text_area :password %>
+    <%= form.password_field :password %>
        <% @user.errors.full_messages_for(:password).each do |message| %>
       <div><%= message %></div>
     <% end %>
@@ -29,7 +29,7 @@
 
    <div>
     <%= form.label :password_confirmation%><br>
-    <%= form.text_area :password_confirmation %>
+    <%= form.password_field :password_confirmation %>
        <% @user.errors.full_messages_for(:password_confirmation).each do |message| %>
       <div><%= message %></div>
     <% end %>
