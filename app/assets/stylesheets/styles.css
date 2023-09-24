@@ -117,3 +117,31 @@ input[type="submit" i]{
 .perfilButton a:hover{
     background-color: rgba(0,0,0,0.5);
 }
+
+
+/* Estilo para o container principal */
+ /* Estilo para cada post */
+
+ 
+ .box-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px; /* Espaçamento negativo para compensar as margens internas */
+  }
+
+  .box_posts {
+    flex: 1;
+    min-width: calc(33.33% - 20px); /* 33.33% de largura com margem entre as box_posts */
+    margin: 10px; /* Espaçamento entre as box_posts */
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Estilo para o link "Show this post" */
+  .box_posts a {
+    color: #007BFF;
+    text-decoration: none;
+  }

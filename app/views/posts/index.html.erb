@@ -1,14 +1,17 @@
+
 <p style="color: green"><%= notice %></p>
 
-<h1>Posts</h1>
+<h1>Resumos <%= link_to "New post", new_post_path %></h1>
 
-<div id="posts">
+<div class="box-grid">
   <% @posts.each do |post| %>
-    <%= render post %>
-    <p>
-      <%= link_to "Show this post", post %>
-    </p>
+    <div class="box_posts">
+      <%= render post %>
+      <p>
+        <%= link_to "Show this post", post %>
+      </p>
+    </div>
   <% end %>
 </div>
-
-<%= link_to "New post", new_post_path %>
+  <%= link_to "New post", new_post_path %>
+</div>
